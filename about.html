@@ -1,11 +1,50 @@
-<?php include 'includes/header.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahzad Habib - Web Developer Portfolio</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <!-- Add your logo image or text here -->
+        </a>
+        
+        <div class="mobile-toggle" id="mobile-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li class=""><a href="index.html">Home</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+                <li class=""><a href="portfolio.html">Portfolio</a></li>
+                <li class=""><a href="blog.html">Blog</a></li>
+                <li class=""><a href="contact.html">Contact</a></li>
+                <li><a href="#hire" class="btn btn-primary" style="padding: 8px 24px;">Hire Me</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main style="padding-top: 80px;">
+
 
 <!-- Page Title -->
 <section style="background: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80') center/cover; padding: 150px 0 100px; position: relative;">
     <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,10,10,0.7), var(--bg-dark));"></div>
     <div class="container" style="position: relative; z-index: 1; text-align: center;">
         <h1 style="font-size: 3.5rem; margin-bottom: 10px;">About Me</h1>
-        <p class="text-muted"><a href="index.php">Home</a> / About</p>
+        <p class="text-muted"><a href="index.html">Home</a> / About</p>
     </div>
 </section>
 
@@ -60,9 +99,70 @@
                 </div>
             </div>
             
-            <a href="contact.php" class="btn btn-primary" style="margin-top: 30px;">Download CV</a>
+            <a href="contact.html" class="btn btn-primary" style="margin-top: 30px;">Download CV</a>
         </div>
     </div>
 </section>
 
-<?php include 'includes/footer.php'; ?>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col" style="flex: 2;">
+                <a href="index.html" class="logo" style="margin-bottom: 20px;">
+                    <img src="https://ui-avatars.com/api/?name=Elito&background=00D084&color=fff&rounded=true" alt="Elito Logo"> Elito.
+                </a>
+                <p class="text-muted" style="margin-bottom: 20px; max-width: 300px;">
+                    Welcome and open yourself to your truest love this year with us! With the Release Process.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="www.linkedin.com/in/shehzad-khan-921556282"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="#">Video Guide</a></li>
+                    <li><a href="blog.html">Recent Post</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>All Services</h4>
+                <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Brand Identity</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col" style="flex: 1.5;">
+                <h4>Newsletter</h4>
+                <p class="text-muted" style="margin-bottom: 15px;">Must explain to you how all this mistaken idea pleasure born and give you a complete account.</p>
+                <form action="#" method="POST" style="display: flex; background: var(--bg-lighter); padding: 5px; border-radius: var(--radius-sm);">
+                    <input type="email" placeholder="Email Address *" style="background: transparent; border: none; color: var(--text-main); padding: 10px; width: 100%; outline: none;">
+                    <button type="submit" style="background: transparent; border: none; color: var(--text-muted); padding: 0 15px; cursor: pointer;"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2025 Elito. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
